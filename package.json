@@ -1,0 +1,38 @@
+{
+  "name": "@ribeiro/message-broker-lib",
+  "version": "1.0.0",
+  "description": "Abstração reusável para brokers Kafka, SQS e SNS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "kafka",
+    "sqs",
+    "sns",
+    "broker",
+    "message"
+  ],
+  "author": "Geovanny Ribeiro",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.500.0",
+    "kafkajs": "^2.2.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.30",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.4",
+    "typescript": "^5.8.3"
+  }
+}
