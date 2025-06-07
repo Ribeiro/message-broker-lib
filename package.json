@@ -1,5 +1,5 @@
 {
-  "name": "@ribeiro/message-broker-lib",
+  "name": "@geovannyribeiro/message-broker-lib",
   "version": "1.0.0",
   "description": "Abstração reusável para brokers Kafka, SQS e SNS",
   "main": "dist/index.js",
