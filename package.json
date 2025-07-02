@@ -1,11 +1,12 @@
 {
-  "name": "@geovannyribeiro/message-broker-lib",
+  "name": "msg-broker-lib",
   "version": "1.0.0",
   "description": "Abstração reusável para brokers Kafka, SQS e SNS",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/index.d.ts",  
   "files": [
-    "dist/**/*"
+    "dist/**/*.js",
+    "dist/**/*.d.ts"
   ],
   "scripts": {
     "build": "tsc",
@@ -23,6 +24,13 @@
   ],
   "author": "Geovanny Ribeiro",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ribeiro/message-broker-lib.git"
+  },
   "dependencies": {
     "@aws-sdk/client-sqs": "^3.500.0",
     "kafkajs": "^2.2.4"
