@@ -17,12 +17,12 @@ Biblioteca TypeScript para facilitar o envio e recebimento de mensagens em siste
 ## Instalação
 
 ```bash
-npm install my-message-broker-lib
+npm install msg-broker-lib
 ```
 
 ## Exemplo de uso com Kafka
 ```typescript
-import { KafkaPublisherSubscriber, handleNack } from 'my-message-broker-lib';
+import { KafkaPublisherSubscriber, handleNack } from 'msg-broker-lib';
 
 const kafka = new KafkaPublisherSubscriber(['localhost:9092']);
 
@@ -53,7 +53,7 @@ run();
 ## Exemplo de uso com Amazon SQS
 
 ```typescript
-import { SqsPublisherSubscriber, handleNack } from 'my-message-broker-lib';
+import { SqsPublisherSubscriber, handleNack } from 'mmsg-broker-lib';
 
 const sqs = new SqsPublisherSubscriber('us-east-1');
 
